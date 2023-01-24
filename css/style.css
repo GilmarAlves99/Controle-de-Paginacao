@@ -1,0 +1,71 @@
+:root {
+  --black: #130f0d;
+  --primary: hsl(32, 98%, 56%);
+  --white: #f0f0f9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  height: 100vh;
+}
+
+*,
+button,
+input {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(32deg, 98%, 5%);
+  padding: 16px;
+}
+header h1 {
+  color: var(--primary);
+  font-size: 2.5em;
+}
+
+#paginate {
+  width: 100%;
+  height: 32px auto;
+}
+#paginate .list .item {
+  padding: 16px 32px;
+  border-bottom: 1px solid hsl(32deg, 98%, 12%);
+}
+#paginate .list .item:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+#paginate .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+#paginate .pagination div {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+#paginate .pagination div:not(.numbers),
+#paginate .pagination div.numbers div {
+  width: 40px;
+  height: 40px;
+}
+#paginate .pagination div:not(.numbers):hover,
+#paginate .pagination div.numbers div:hover,
+#paginate .pagination div.numbers div.active {
+  color: var(--primary);
+}
+
+/*# sourceMappingURL=style.css.map */
